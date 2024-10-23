@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal Amount" />
+
+    <EditText
+        android:id="@+id/editRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrincipal"
+        android:layout_marginTop="16dp"
+        android:hint="Rate of Interest" />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editRate"
+        android:layout_marginTop="16dp"
+        android:hint="Time Period (in years)" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Calculate" />
+
+</RelativeLayout>
